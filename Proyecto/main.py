@@ -1,15 +1,21 @@
-class Areas:
-    def __init__(self, base, altura, diagonalmay, diagonalmen):
-        self.base = base
-        self.altura = altura
-        self.diagonalmay = diagonalmay
-        self.diagonalmen = diagonalmen
-    
-    def areaTriangulo(self):
-        return (self.base * self.altura)/2
-    
-    def areaRectangulo(self):
-        return self.base * self.altura
+from areas import *
 
-    def areaRombo(self):
-        return (self.diagonalmay * self.diagonalmen)
+opcion = None
+
+print("Escoja las opciones a continuacion...")
+print("1- Areas")
+print("2- Volumenes")
+print("3- Distancias")
+print("4- Salir")
+
+opcion = int(input("Selecciona una opcion: "))
+
+while opcion != 4:
+
+    if opcion == 1:
+        print("Areas".center(50,'*'))
+
+        print('Elija ')
+
+
+
