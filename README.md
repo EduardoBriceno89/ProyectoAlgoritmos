@@ -1,1 +1,1 @@
-# ProyectoAlgoritmos
+# Proyecto Algoritmos
