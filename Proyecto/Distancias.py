@@ -13,7 +13,7 @@ class DistanciaRectangulo:
         self.base = base
     
     def distanciaRectangulo(self):
-        return 2(self.altura + self.base)
+        return (self.altura + self.base) * 2
 
 class DistanciaTriangulo:
 
