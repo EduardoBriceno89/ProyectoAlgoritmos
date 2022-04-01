@@ -1,5 +1,6 @@
 from Areas import *
 from Distancias import *
+from Volumenes import *
 
 opcion = None
 
@@ -52,6 +53,39 @@ while opcion != 4:
 
         elif opcion == 2:
             print('Volumenes'.center(50,'*'))
+            print('1- Cuadrado')
+            print('2- Rectangulo')
+            print('3- Triangulo')
+            print('4- Circulo')
+
+            opV = int(input('Ingrese la figura a calcular: '))
+
+            if opV == 1:
+                valor1 = float(input('Ingrese lado: '))
+
+                volumenCuadrado = VolumenCuadrado(valor1)
+                print(f'El volumen del cuadrado es: {volumenCuadrado.Volumencuadrado():.2f}')
+            elif opV == 2:
+                valor1 = float(input('Ingrese largo: '))
+                valor2 = float(input('Ingrese ancho: '))
+                valor3 = float(input('Ingrese altura: '))
+
+                volumenRectangulo = VolumenRectangulo(valor1, valor2, valor3)
+                print(f'El volumen del rectangulo es: {volumenRectangulo.Volumenrectangulo():.2f}')
+            elif opV == 3:
+                valor1 = float(input('Ingrese altura: '))
+                valor2 = float(input('Ingrese base: '))
+                valor3 = float(input('Ingrese largo: '))
+
+                volumenTriangulo = VolumenTriangulo(valor1, valor2, valor3)
+                print(f'El volumen del triangulo es: {volumenTriangulo.Volumentriangulo():.2f}')
+            elif opV == 4:
+                valor1 = float(input('Ingrese el radio: '))
+                pi = 3.1416
+
+                volumenCirculo = VolumenCirculo(valor1, pi)
+                print(f'El volumen del circulo es: {volumenCirculo.Volumencirculo():.2f}')
+
         elif opcion == 3:
             print('Distancias'.center(50,'*'))
             print('1- Cuadrado')
