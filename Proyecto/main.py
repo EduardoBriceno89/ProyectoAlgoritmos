@@ -85,6 +85,9 @@ while opcion != 4:
 
                 volumenCirculo = VolumenCirculo(valor1, pi)
                 print(f'El volumen del circulo es: {volumenCirculo.Volumencirculo():.2f}')
+            else:
+                print('Opcion incorrecta, intente de nuevo...')
+
 
         elif opcion == 3:
             print('Distancias'.center(50,'*'))
@@ -117,11 +120,12 @@ while opcion != 4:
 
                 distanciaCirculo = DistanciaCirculo(valor1,pi)
                 print(f'La distancia del circulo es: {distanciaCirculo.distanciaCirculo():.3f}')
+            else:
+                print('Opcion incorrecta, intente de nuevo...')
+
 
         elif opcion == 4:
             print("Saliste del programa...","\U0001F614")
-        else:
-            print('Opcion incorrecta, intente de nuevo...')
 
     except Exception as e:
         print(f'Ocurrio un error: {e}')
